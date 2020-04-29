@@ -1,0 +1,204 @@
+{
+  "tests": [
+    {
+      "name": "Task01-Test01",
+      "setup": "csc Task01/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2 3 4 5",
+      "output": "2:4\r\n2*4",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task01-Test02",
+      "setup": "csc Task01/Program.cs",
+      "run": "mono Program.exe",
+      "input": " -2 -1    0   1 2     3     ",
+      "output": "-2:-1:0:2\r\n-2*-1*0*2\r\n",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task01-Test03",
+      "setup": "csc Task01/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2 3 4 5 i",
+      "output": "FormatException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task01-Test04",
+      "setup": "csc Task01/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2 3 4 1234567890987654321",
+      "output": "OverflowException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task01-Test05",
+      "setup": "csc Task01/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 3 5 7 9",
+      "output": "InvalidOperationException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task02-Test01",
+      "setup": "csc Task02/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2 0 4 5",
+      "output": "2,500\r\n2,500\r\n1 2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task02-Test02",
+      "setup": "csc Task02/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2000000000 2000000002",
+      "output": "OverflowException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task02-Test03",
+      "setup": "csc Task02/Program.cs",
+      "run": "mono Program.exe",
+      "input": "0 1 2 3      4 5",
+      "output": "InvalidOperationException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task02-Test04",
+      "setup": "csc Task02/Program.cs",
+      "run": "mono Program.exe",
+      "input": "-9 -8 -7",
+      "output": "64,667\r\n64,667\r\n-9 -8 -7",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test02-Test05",
+      "setup": "csc Task02/Program.cs",
+      "run": "mono Program.exe",
+      "input": "123456",
+      "output": "OverflowException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test03-Task01",
+      "setup": "csc Task03/Program.cs",
+      "run": "mono Program.exe",
+      "input": "3\r\nIvanov 1970 0\r\nIvanov 1971 0\r\nIvanov 1970 1",
+      "output": "Ivanov: Asus [1970]\r\nIvanov: Dell [1971]\r\nIvanov: Dell [1970]\r\n\r\nIvanov: Asus [1970]\r\nIvanov: Dell [1971]\r\nIvanov: Dell [1970]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task03-Test02",
+      "setup": "csc Task03/Program.cs",
+      "run": "mono Program.exe",
+      "input": "3\r\nIvanov 1969 0\r\nIvanov 1969 0\r\nIvanov 1969 0",
+      "output": "ArgumentException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task03-Test03",
+      "setup": "csc Task03/Program.cs",
+      "run": "mono Program.exe",
+      "input": "3\r\nIvanov 1979 0\r\nIvanov 1979 5\r\nIvanov 1979 0",
+      "output": "ArgumentException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task03-Test04",
+      "setup": "csc Task03/Program.cs",
+      "run": "mono Program.exe",
+      "input": "345678765434567876543",
+      "output": "OverflowException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task03-Test05",
+      "setup": "csc Task03/Program.cs",
+      "run": "mono Program.exe",
+      "input": "9\r\nИванов 2000 0\r\nИванов 2002 0\r\nИванов 2002 1\r\nИванова 2000 0\r\nИванова 2000 1\r\nИванова 2000 2\r\nПетров 1978 3\r\nПетров 1979 3\r\nПетров 1979 0",
+      "output": "Петров: Apple [1979]\r\nПетров: Microsoft [1979]\r\nПетров: Microsoft [1978]\r\nИванова: Apple [2000]\r\nИванова: Asus [2000]\r\nИванова: Dell [2000]\r\nИванов: Apple [2002]\r\nИванов: Apple [2000]\r\nИванов: Asus [2002]\r\n\r\nПетров: Apple [1979]\r\nПетров: Microsoft [1979]\r\nПетров: Microsoft [1978]\r\nИванова: Apple [2000]\r\nИванова: Asus [2000]\r\nИванова: Dell [2000]\r\nИванов: Apple [2002]\r\nИванов: Apple [2000]\r\nИванов: Asus [2002]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task04-Test01",
+      "setup": "csc Task04/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2 3 4 5",
+      "output": "8\r\n8",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task04-Test02",
+      "setup": "csc Task04/Program.cs",
+      "run": "mono Program.exe",
+      "input": "2000000000 1 2000000000",
+      "output": "OverflowException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task04-Test03",
+      "setup": "csc Task04/Program.cs",
+      "run": "mono Program.exe",
+      "input": "1 2 3 4 5 a",
+      "output": "FormatException",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task04-Test04",
+      "setup": "csc Task04/Program.cs",
+      "run": "mono Program.exe",
+      "input": "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+      "output": "5\r\n5",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task04-Test05",
+      "setup": "csc Task04/Program.cs",
+      "run": "mono Program.exe",
+      "input": "2000000000 2000000000 5 10",
+      "output": "0\r\n0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
