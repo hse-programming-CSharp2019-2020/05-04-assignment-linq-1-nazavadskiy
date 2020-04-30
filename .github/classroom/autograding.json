@@ -145,7 +145,7 @@
       "setup": "csc Task03/Program.cs",
       "run": "mono Program.exe",
       "input": "9\r\nИванов 2000 0\r\nИванов 2002 0\r\nИванов 2002 1\r\nИванова 2000 0\r\nИванова 2000 1\r\nИванова 2000 2\r\nПетров 1978 3\r\nПетров 1979 3\r\nПетров 1979 0",
-      "output": "Петров: Apple [1979]\r\nПетров: Microsoft [1979]\r\nПетров: Microsoft [1978]\r\nИванова: Apple [2000]\r\nИванова: Asus [2000]\r\nИванова: Dell [2000]\r\nИванов: Apple [2002]\r\nИванов: Apple [2000]\r\nИванов: Asus [2002]\r\n\r\nПетров: Apple [1979]\r\nПетров: Microsoft [1979]\r\nПетров: Microsoft [1978]\r\nИванова: Apple [2000]\r\nИванова: Asus [2000]\r\nИванова: Dell [2000]\r\nИванов: Apple [2002]\r\nИванов: Apple [2000]\r\nИванов: Asus [2002]",
+      "output": "Петров: Dell [1979]\r\nПетров: Microsoft [1979]\r\nПетров: Microsoft [1978]\r\nИванова: Apple [2000]\r\nИванова: Asus [2000]\r\nИванова: Dell [2000]\r\nИванов: Asus [2002]\r\nИванов: Dell [2002]\r\nИванов: Dell [2000]\r\n\r\nПетров: Dell [1979]\r\nПетров: Microsoft [1979]\r\nПетров: Microsoft [1978]\r\nИванова: Apple [2000]\r\nИванова: Asus [2000]\r\nИванова: Dell [2000]\r\nИванов: Asus [2002]\r\nИванов: Dell [2002]\r\nИванов: Dell [2000]",
       "comparison": "included",
       "timeout": 10,
       "points": 1
